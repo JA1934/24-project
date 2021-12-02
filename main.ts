@@ -14,7 +14,7 @@ basic.forever(function () {
             music.ringTone(1000090)
             music.setVolume(255)
             basic.pause(500)
-            radio.sendString("Pantry Is Being Opened by Unauthorized User")
+            radio.sendString("Pantry Sabotaged")
         } else {
             pins.digitalWritePin(DigitalPin.P2, 0)
             pins.digitalWritePin(DigitalPin.P1, 0)
