@@ -9,9 +9,9 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         basic.showString("Welcome Master!")
     } else {
-        if (value >= 950) {
+        if (value < 950) {
             pins.digitalWritePin(DigitalPin.P2, 1)
-            music.ringTone(1000090)
+            music.ringTone(3000)
             music.setVolume(255)
             basic.pause(500)
             radio.sendString("Pantry Sabotaged")
