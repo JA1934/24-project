@@ -1,8 +1,11 @@
+// Radio group is 2500
 let value = 0
 radio.setGroup(2500)
+// Set the flex sensor
 basic.forever(function () {
     pins.setAudioPin(AnalogPin.P1)
     value = pins.analogReadPin(AnalogPin.P0)
+    // If the A button is pressed show this string
     if (input.buttonIsPressed(Button.A)) {
         pins.digitalWritePin(DigitalPin.P2, 0)
         pins.digitalWritePin(DigitalPin.P1, 0)
