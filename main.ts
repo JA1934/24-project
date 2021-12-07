@@ -11,6 +11,7 @@ basic.forever(function () {
         pins.digitalWritePin(DigitalPin.P1, 0)
         basic.showString("Welcome Master!")
     } else {
+        // When the flex sensor is less than 950 start the LED and buzzer. If not the buzzer and LED are off.
         if (value < 950) {
             pins.digitalWritePin(DigitalPin.P2, 1)
             music.ringTone(3000)
