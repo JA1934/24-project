@@ -13,7 +13,7 @@ basic.forever(function () {
         basic.pause(5000)
     } else {
         // When the flex sensor is less than 950 start the LED and buzzer. If not the buzzer and LED are off.
-        if (value < 950) {
+        if (value > 850) {
             pins.digitalWritePin(DigitalPin.P2, 1)
             music.playMelody("C F C F C F C F ", 320)
             music.setVolume(255)
